@@ -2,7 +2,7 @@ const { Op } = require('sequelize'); // Add this import
 const { sequelize } = require('../config/database');
 const jwt = require('jsonwebtoken');
 const { validationResult } = require('express-validator');
-const User = require('../server/models/User');
+const User = require('../models/User');
 
 // Register a new user
 exports.register = async (req, res) => {

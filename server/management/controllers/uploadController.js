@@ -1,11 +1,11 @@
 const { validationResult } = require('express-validator');
-const Session = require('../server/models/Session');
-const FertilizerUpload = require('../server/models/FertilizerUpload');
-const PesticideUpload = require('../server/models/PesticideUpload');
-const IrrigationUpload = require('../server/models/IrrigationUpload');
-const LaborUpload = require('../server/models/LaborUpload');
-const MachineryUpload = require('../server/models/MachineryUpload');
-const DiseaseUpload = require('../server/models/DiseaseUpload');
+const Session = require('../models/Session');
+const FertilizerUpload = require('../models/FertilizerUpload');
+const PesticideUpload = require('../models/PesticideUpload');
+const IrrigationUpload = require('../models/IrrigationUpload');
+const LaborUpload = require('../models/LaborUpload');
+const MachineryUpload = require('../models/MachineryUpload');
+const DiseaseUpload = require('../models/DiseaseUpload');
 
 // Check if session exists and is active
 const checkSession = async (sessionId, userId) => {

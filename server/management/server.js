@@ -1,9 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 const { sequelize, testConnection } = require('./config/database');
-const authRoutes = require('./server/routes/authRoutes');
-const sessionRoutes = require('./server/routes/sessionRoutes');
-const uploadRoutes = require('./server/routes/uploadRoutes');
+const authRoutes = require('./routes/authRoutes');
+const sessionRoutes = require('./routes/sessionRoutes');
+const uploadRoutes = require('./routes/uploadRoutes');
 
 // Load environment variables
 require('dotenv').config();
