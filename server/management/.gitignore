@@ -17,6 +17,7 @@ out/
 # Ignore dependency directories
 node_modules/
 dist/
+.env
 
 # Ignore OS files
 .DS_Store
